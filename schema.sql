@@ -60,3 +60,12 @@ CREATE TABLE udalost (
     datum DATE,
     lokace VARCHAR(100)
 );
+CREATE TABLE formular_dotaz (
+  dotaz_id INT AUTO_INCREMENT PRIMARY KEY,
+  jmeno VARCHAR(100),
+  prijmeni VARCHAR(100),
+  email VARCHAR(100),
+  telefon VARCHAR(50),
+  pozadavek TEXT,
+  datum DATETIME DEFAULT CURRENT_TIMESTAMP
+);
